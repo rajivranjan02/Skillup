@@ -1,0 +1,73 @@
+/* footer.css */
+.footer_main_div1 {
+    height: 10vw;
+    width: fit-content;
+    background-color: aliceblue;
+    margin-left: 5vw;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the images on smaller screens */
+  }
+  
+  .footer_main_div h4 {
+    font-size: 40px;
+    text-align: center; /* Center the heading */
+  }
+  
+  .footer_main_div1 img {
+    border-radius: 10px;
+    max-width: 100%; /* Ensure images don't overflow their container */
+    height: auto;
+  }
+  
+  .footer_main_div1 img:hover {
+    scale: 1.1;
+  }
+  
+  .footer_main_div2 {
+    background: #000;
+    height: 100px;
+    padding: 20px;
+    margin: 5px;
+    color: aliceblue;
+    gap: 30px;
+  }
+  
+  .icon_social {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the icons on smaller screens */
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .icon_social1 {
+    margin: 10px; /* Add some spacing between icons */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .footer_main_div1 {
+      height: auto; /* Reset height on mobile */
+      margin-left: 0; /* Remove left margin on mobile */
+      padding: 10px; /* Reduce padding on mobile */
+    }
+  
+    .footer_main_div h4 {
+      font-size: 30px; /* Reduce font size on mobile */
+    }
+  
+    .footer_main_div1 img {
+      max-width: 150px; /* Reduce image size on mobile */
+    }
+  
+    .icon_social1 {
+      margin: 5px; /* Reduce spacing between icons on mobile */
+    }
+  }

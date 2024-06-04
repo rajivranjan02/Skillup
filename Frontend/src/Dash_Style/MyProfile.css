@@ -1,0 +1,117 @@
+.my_profile {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding-left: 0;
+  margin-left: -200px;
+}
+
+.cover_photo {
+  height: 200px;
+  width: 114%;
+}
+
+.profile_pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.profile_pic img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.input_text {
+  padding-top: 200px;
+  margin-left: 0;
+  text-align: center;
+}
+
+.input_text form input,
+.input_text form textarea {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textarea1 {
+  width: 80%;
+  max-width: 300px;
+  margin-left: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact {
+  display: grid;
+}
+
+.form_details_profile {
+  margin-left: 0;
+}
+
+.form_details_profile input {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cover_picture_render {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.profile_picture_render {
+  width: 100%;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.save_profile_details_button {
+  background-color: #fff;
+  width: fit-content;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 255, 0.491);
+  overflow: hidden;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .input_text form input,
+  .form_details_profile input {
+    width: 230px;
+    max-width: none;
+  }
+  .cover_photo{
+    width: 270px;
+
+  }
+  .textarea1{
+    height: 15px;
+    width: 230px;
+  }
+  .my_profile{
+    margin-left: 10px;
+  }
+
+}

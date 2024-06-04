@@ -1,0 +1,103 @@
+.container_Outsite {
+  height: auto; /* Remove fixed height */
+  width: 100%; /* Make it full width */
+  max-width: 740px; /* Set maximum width */
+  margin: 30px auto; /* Center horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url("../assets/background.login.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.container_Outsite p {
+  margin-left: 0; /* Remove left margin */
+  text-align: center; /* Center the text */
+}
+
+.Login_img {
+  mix-blend-mode: multiply;
+  width: 100%; /* Make it full width */
+  max-width: 400px; /* Set maximum width */
+  padding-top: 150px;
+  animation: fadeIn 0.5s ease forwards;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.left_img_right_form {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.email_password {
+  padding: 20px;
+  width: 100%; /* Make it full width */
+  max-width: 400px; /* Set maximum width */
+  padding-top: 20px; /* Reduce top padding */
+  margin: 10px auto; /* Center horizontally */
+}
+.gmail{
+  width: 300px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sign_up_p{
+  color: #000;
+}
+.button_signup {
+  background-color: cornflowerblue;
+  width: 70px;
+  cursor: pointer;
+  height: 30px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+  border: #ccc 2px solid;
+}
+
+/* For small devices like phones */
+@media only screen and (max-width: 600px) {
+  .container_Outsite {
+    width: 300px; /* Adjusted width for smaller screens */
+    padding: 10px;
+
+    margin-top: 50px;/* Adjusted padding for smaller screens */
+  }
+
+  .Login_img {
+    padding-top: 30%; /* Adjusted padding for smaller screens */
+  }
+
+  .email_password {
+    padding-top: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .button_signup {
+    max-width: 120px; /* Adjusted max-width for smaller screens */
+  }
+  .container_Outsite p{
+    color: #000;
+  }
+}

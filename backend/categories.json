@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "name": "Programming",
+      "description": "Learn various programming languages and frameworks.",
+      "courses": [
+        { "id": 101, "title": "JavaScript for Beginners", "instructor": "John Doe" },
+        { "id": 102, "title": "Advanced Python", "instructor": "Jane Smith" },
+        { "id": 103, "title": "React and Redux", "instructor": "Tom Johnson" },
+        { "id": 104, "title": "Node.js Essentials", "instructor": "Emma Watson" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Design",
+      "description": "Explore design principles and tools.",
+      "courses": [
+        { "id": 201, "title": "Graphic Design Basics", "instructor": "Alice Johnson" },
+        { "id": 202, "title": "UI/UX Design", "instructor": "Bob Brown" },
+        { "id": 203, "title": "Adobe Illustrator Mastery", "instructor": "Chris Lee" },
+        { "id": 204, "title": "Web Design with Figma", "instructor": "Diana Ross" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Business",
+      "description": "Enhance your business skills and knowledge.",
+      "courses": [
+        { "id": 301, "title": "Marketing 101", "instructor": "Chris Lee" },
+        { "id": 302, "title": "Business Analytics", "instructor": "Daniel Wilson" },
+        { "id": 303, "title": "Financial Accounting", "instructor": "Evan Harris" },
+        { "id": 304, "title": "Entrepreneurship Essentials", "instructor": "Fiona Martin" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Interactivity",
+      "description": "Courses focused on creating interactive experiences.",
+      "courses": [
+        { "id": 401, "title": "Interactive Web Design", "instructor": "Eva Green" },
+        { "id": 402, "title": "Game Development", "instructor": "Frank White" },
+        { "id": 403, "title": "Mobile App Development", "instructor": "Grace Brown" },
+        { "id": 404, "title": "AR/VR Development", "instructor": "Henry King" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "LMS",
+      "description": "Learning Management Systems and their applications.",
+      "courses": [
+        { "id": 501, "title": "Building an LMS", "instructor": "Grace Brown" },
+        { "id": 502, "title": "LMS Best Practices", "instructor": "Hank Miller" },
+        { "id": 503, "title": "Moodle for Educators", "instructor": "Ivy Nelson" },
+        { "id": 504, "title": "Canvas LMS Training", "instructor": "Jack Cooper" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fixed eLearning",
+      "description": "Explore the fundamentals of fixed eLearning.",
+      "courses": [
+        { "id": 601, "title": "eLearning Content Development", "instructor": "Liam Turner" },
+        { "id": 602, "title": "Fixed eLearning Best Practices", "instructor": "Mia Lewis" },
+        { "id": 603, "title": "Creating Engaging eLearning Modules", "instructor": "Noah Scott" },
+        { "id": 604, "title": "Assessment Strategies in eLearning", "instructor": "Olivia Adams" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Podcasts",
+      "description": "Dive into the world of educational podcasts.",
+      "courses": [
+        { "id": 701, "title": "Starting Your Own Podcast", "instructor": "Paul Wright" },
+        { "id": 702, "title": "Podcasting for Educators", "instructor": "Quinn Baker" },
+        { "id": 703, "title": "Monetizing Your Podcast", "instructor": "Rachel Davis" },
+        { "id": 704, "title": "Advanced Podcast Production", "instructor": "Samuel Harris" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "eBooks",
+      "description": "Learn how to create and publish eBooks.",
+      "courses": [
+        { "id": 801, "title": "Writing an eBook", "instructor": "Taylor Moore" },
+        { "id": 802, "title": "eBook Design and Layout", "instructor": "Uma Clark" },
+        { "id": 803, "title": "Publishing on Amazon Kindle", "instructor": "Victor Thomas" },
+        { "id": 804, "title": "Marketing Your eBook", "instructor": "Wendy Martinez" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Assessment",
+      "description": "Courses on creating and managing assessments.",
+      "courses": [
+        { "id": 901, "title": "Assessment Design Principles", "instructor": "Xander Roberts" },
+        { "id": 902, "title": "Online Assessment Tools", "instructor": "Yara Jackson" },
+        { "id": 903, "title": "Data-Driven Assessments", "instructor": "Zachary Thompson" },
+        { "id": 904, "title": "Formative and Summative Assessments", "instructor": "Anna Bell" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Quizzes",
+      "description": "Learn how to create engaging quizzes.",
+      "courses": [
+        { "id": 1001, "title": "Creating Quizzes in Moodle", "instructor": "Brian Cook" },
+        { "id": 1002, "title": "Using Kahoot for Classroom Quizzes", "instructor": "Catherine Reed" },
+        { "id": 1003, "title": "Interactive Quiz Design", "instructor": "David Evans" },
+        { "id": 1004, "title": "Gamifying Your Quizzes", "instructor": "Evelyn Harris" }
+      ]
+    }
+  ]
+  

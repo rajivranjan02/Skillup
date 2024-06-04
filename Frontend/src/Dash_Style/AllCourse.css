@@ -1,0 +1,179 @@
+.course_div ul{
+  display: flex;
+  padding: 20px;
+  margin-left: -200px;
+  gap: 50px;
+}
+.img_course_div2{
+  position: relative;
+  
+}
+.cart_course{
+  display: flex;
+  gap: 1030px;
+  flex-direction: row;
+}
+.course_main_container strong{
+  background-color: #07f70b;
+  margin-left: 1170px;
+  padding: 5px;
+  z-index: 1;
+  border-radius: 50%;
+
+  position: absolute;
+
+}
+.check_items{
+  
+  padding: 10px;
+  margin: 14px;
+  width: 250px;
+  margin-top: -10px;
+  height: 20px;
+  position: absolute;
+  z-index: 1;
+  
+  background-color: yellow;
+}
+.payment_checkout{
+  background-color: #000;
+  width: 40px;
+}
+.add_itmes{
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+  margin: 14px;
+  background-color: #fff;
+}
+.remove_items{
+  background-color: rgb(237, 82, 80);
+  width: 90px;
+  height: 20px;
+  padding: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.cart-item{
+  display: flex;
+}
+.icon_cart{
+  padding: 5px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.view_cart_detials {
+  background-color: rgb(12, 1, 1);
+  width: 300px;
+  height: 430px;
+  margin-left: -600px; /* Updated from -600px */
+  margin-top: -30px;
+  position: absolute;
+  border: 2px solid #f6f4f4;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.view_cart_detials p{
+  color: black;
+}
+.view_cart_detials h5{
+  color: #fff;
+  font-size: 10px;
+}
+
+.view_cart_detials.show {
+transform: translateX();
+}
+li {
+perspective: 1000px;
+position: relative;
+}
+
+.img_course_div2 ul li p {
+background-color: #000;
+color: #fff;
+padding: 10px;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+box-sizing: border-box;
+opacity: 0; /* Add this line to initially hide the p tag */
+transition: opacity 0.3s ease; /* Add this line for smooth opacity transition */
+}
+
+li:hover .img_course_div2 ul li p {
+opacity: 1; /* Add this line to show the p tag on hover */
+}
+
+li img {
+transition: transform 0.6s, filter 0.3s;
+transform-style: preserve-3d;
+z-index: -1;
+}
+
+li .Buycourse {
+background-color: rgba(11, 240, 11, 0.667);
+padding: 10px;
+transition: background-color 0.3s ease;
+position: absolute;
+bottom: 70px;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+li:hover .Buycourse {
+opacity: 1;
+}
+
+li img {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+
+li:hover img {
+transform: rotateY(180deg);
+filter: blur(4px);
+}
+
+li:hover .Buycourse {
+background-color: rgba(11, 240, 11, 1);
+opacity: 1;
+}
+.img_course_div2 img{
+  height: 300px;
+}
+.Buycourse {
+  background-color: rgba(11, 240, 11, 0.667);
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  cursor: pointer;
+}
+
+.Buycourse:hover {
+  background-color: rgb(13, 211, 42); /* Change background color on hover */
+}
+
+@media (max-width: 768px){
+  .course_div ul {
+      flex-direction: column;
+      margin-left: -70px;
+  }
+  .course_div ul li img{
+      width: 260px;
+  }
+  .Buycourse:hover{
+      width: 243px;
+      margin-left: 63px;
+  }
+  .cart_course{
+      flex-direction: row;
+      gap: 135px;
+  }
+  .course_main_container{
+      
+  }
+}

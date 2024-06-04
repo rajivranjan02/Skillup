@@ -1,0 +1,48 @@
+/* content.css */
+.content_part {
+    height: 300px;
+  }
+  
+  .content_part li {
+    color: black;
+    font-weight: bold;
+    column-gap: 52px;
+    list-style: none;
+    margin-bottom: 10px;
+    width: 220px;
+    padding: 5px;
+  }
+  .dropdown li a {
+    text-decoration: none;
+  }
+  
+  
+  .Course_Material
+   {
+    display: flex;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2ad 100%);
+  }
+  
+  
+  .dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-icon.rotate {
+    transform: rotate(180deg);
+  }

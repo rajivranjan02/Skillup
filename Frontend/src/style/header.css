@@ -1,0 +1,257 @@
+/* General Styles */
+ h3 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 2.5rem; /* Using rem for better responsiveness */
+}
+.advantages_1st h3{
+  margin-top: 70px;
+}
+h4 {
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+}
+
+.header_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 2rem;
+  gap: 200px;
+}
+
+.header_image > div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.header_image img {
+  max-width: 100%; /* Ensure images don't overflow their container */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header_image img:hover {
+  transform: scale(1.2);
+}
+
+.ratings {
+  list-style-type: none;
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 2rem;
+}
+
+.ratings li {
+  margin: 1rem;
+  text-align: center;
+}
+
+#icon {
+  font-size: 2rem;
+  color: chartreuse;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  h3 {
+    font-size: 2rem;
+    padding-top: 90px;
+  }
+
+  .header_image > div {
+    width: 100%; /* Make images take full width on mobile */
+    max-width: 300px; /* Limit maximum width */
+    margin: 0.5rem auto; /* Center horizontally */
+  }
+
+  .ratings li {
+    width: 50%; /* Display two ratings per row on mobile */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header_image > div {
+    width: 50%; /* Display two images per row on tablets */
+  }
+
+  .ratings li {
+    width: 25%; /* Display four ratings per row on tablets */
+  }
+}
+
+/* Styles for courses section */
+.courses_main {
+  background-color: #fff;
+}
+
+.courses_main h6 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+.course_suggetion {
+  display: flex;
+  padding-left: 150px;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.course_suggetion_wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: normal;
+}
+
+.course_suggetion_wrapper:hover {
+  animation-play-state: paused;
+}
+
+.course_suggetion_div {
+  height: 20vw;
+  width: 20vw;
+  padding: 5px;
+  margin: 5px;
+  flex-shrink: 0;
+}
+
+.course_suggetion_div img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Button Styles */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  font-size: inherit;
+  margin: 100px;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+button.learn-more:hover {
+  transform: scale(1.1);
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/* Responsive Styles for Courses Section */
+@media (max-width: 767px) {
+  .course_suggetion {
+    padding-left: 20px;
+  }
+
+  .course_suggetion_div {
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .course_suggetion {
+    padding-left: 50px;
+  }
+
+  .course_suggetion_div {
+    height: 30vw;
+    width: 30vw;
+  }
+}

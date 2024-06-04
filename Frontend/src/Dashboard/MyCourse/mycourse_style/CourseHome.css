@@ -1,0 +1,63 @@
+.CourseHome_main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .CourseHome_main h2 {
+    color: aliceblue;
+    text-align: center;
+  }
+  .category_webdev{
+    padding: 13px;
+  }
+  .category_webdev1{
+    margin-left: 500px;
+    margin-top: 40px;
+  }
+  .course-categories h3{
+    background-color: greenyellow;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 4px;
+   margin-left: 420px;
+  }
+  
+  .category_webdev3{
+    margin-top: 30px;
+  }
+  .course-categories, .testimonials, .instructors, .events, .cta {
+    margin-top: 20px;
+  }
+  
+  .categories, .testimonial, .instructor {
+    margin-top: 10px;
+  }
+  
+  .category, .testimonial, .instructor {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  
+
+  
+  .category h4, .instructor h4 {
+    margin: 0 0 5px 0;
+  }
+  
+  .explore-courses-btn, .sign-up-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .explore-courses-btn:hover, .sign-up-btn:hover {
+    background-color: #0056b3;
+  }
+  

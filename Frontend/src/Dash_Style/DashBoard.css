@@ -1,0 +1,87 @@
+/* Default styles */
+.dashboard_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin: 6px;
+  }
+  
+  .total_dashboard {
+    height: fit-content;
+    margin-left: -250px;
+    
+    background-color: rgba(82, 164, 236, 0.128);
+  }
+  
+  .profile {
+    /* ... */
+  }
+  
+  .welcome {
+    background-color: rgba(88, 100, 100, 0.16);
+    width: fit-content;
+    height: 200px;
+    border-radius: 20px;
+  }
+  
+  .cartoon_pic img {
+    mix-blend-mode: multiply;
+  }
+  
+  .welcome {
+    display: flex;
+  }
+  
+  p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .chart_bar {
+    justify-content: space-around;
+    padding: 1px;
+  }
+  
+  .chart {
+    padding: 4px;
+    margin: 5px;
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .dashboard_nav {
+      flex-direction: row;
+      align-items: center;
+    }
+    .profile{
+        margin-right: 70px;
+    }
+  
+    .total_dashboard {
+      margin-left: 0;
+
+    }
+  
+    .welcome {
+      flex-direction: column;
+      align-items: center;
+      width: 78vw;
+      padding-left: 5px;
+      height: auto;
+      margin-top: 10px;
+    }
+    .welcome p{
+        color: #000;
+    }
+  
+    .cartoon_pic img {
+      width: 150px;
+    }
+    .chart{
+        width: 90vw;
+    }
+  
+    .welcome_user_text {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }

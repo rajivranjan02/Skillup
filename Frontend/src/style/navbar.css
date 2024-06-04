@@ -1,0 +1,184 @@
+/* Common styles for all devices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to right, #4141baac, #1390877e);
+}
+
+.home_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home_navbar {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #000;
+  background-color: rgb(56 189 248);
+  position: relative;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 36px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #171a1b;
+}
+
+.search {
+  border-radius: 30px;
+  height: 40px;
+  background-color: aliceblue;
+  padding-left: 25px;
+  width: 25vw;
+}
+
+.logo {
+  margin-left: 4px;
+}
+
+/* Toggle button styles */
+.toggle-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 300px;
+  margin-top: -30px;
+}
+
+.toggle-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.toggle-icon:before,
+.toggle-icon:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: top 0.2s 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.toggle-icon:before {
+  top: -6px;
+}
+
+.toggle-icon:after {
+  top: 6px;
+}
+
+.toggle-button.open .toggle-icon {
+  background: transparent;
+}
+
+.toggle-button.open .toggle-icon:before,
+.toggle-button.open .toggle-icon:after {
+  top: 0;
+  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+}
+
+.toggle-button.open .toggle-icon:before {
+  transform: rotate(45deg);
+}
+
+.toggle-button.open .toggle-icon:after {
+  transform: rotate(-45deg);
+}
+
+/* Media queries for responsive design */
+/* For small devices like phones */
+@media only screen and (max-width: 600px) {
+  .home_container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+  }
+
+  .nav-elements ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    display: none;
+  }
+
+  .nav-elements.show ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .search {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .home_container {
+    padding: 0 10px;
+
+  }
+  .home_navbar{
+    height: fit-content;
+  }
+
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 24px;
+  }
+}

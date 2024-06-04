@@ -1,0 +1,8 @@
+.sidebar_left{
+    width: 20vw;
+    height: 45vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}

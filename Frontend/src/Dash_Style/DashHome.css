@@ -1,0 +1,70 @@
+.admin-panel {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  height: fit-content;
+  position: relative; /* Add position relative for the admin-panel */
+}
+.Content {
+  flex-grow: 1;
+  transition: margin 0.3s ease-in-out;
+}
+.menu-icon{
+  padding-left: -400px;
+  z-index: 1;
+  
+}
+
+.Content.full-screen {
+  margin: 0;
+}
+
+.DashNav {
+  transition: transform 0.3s ease-in-out;
+}
+
+.DashNav.hidden {
+  transform: translateX(-100%);
+}
+
+.menu-icon {
+  position: absolute; /* Position the menu icon absolutely */
+  top: 10px; /* Adjust the top position */
+  left: 10px; /* Adjust the left position */
+  font-size: 24px; /* Adjust the font size */
+  cursor: pointer; /* Add cursor pointer for better user experience */
+  z-index: 2; /* Ensure the menu icon is above other elements */
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    flex-direction: column;
+  }
+
+  .DashNav {
+    position: absolute; /* Position the DashNav absolutely */
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    height: 100%;
+    z-index: 1; /* Ensure the DashNav is above the Content */
+    transform: translateX(-100%); /* Initially hide the DashNav */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .DashNav.visible {
+    transform: translateX(0); /* Show the DashNav */
+  }
+
+  .Content {
+    padding-left: 60px;
+    
+    width: 100%;
+    padding-top: 50px; /* Add some top padding for the menu icon */
+  }
+
+  .Content.full-screen {
+    margin: 0;
+    padding-top: 0; /* Remove top padding when in full screen */
+  }
+}

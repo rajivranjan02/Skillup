@@ -1,0 +1,36 @@
+.support_main form input{
+    width: 630px;
+}
+.support_main{
+    border: 3px solid #fff;
+    width: fit-content;
+    padding: 20px;
+    height: 560px;
+    margin: 10px;
+    margin-left: 140px;
+    text-align: center;
+    background-color: rgba(175, 189, 190, 0.164);
+    border-radius: 20px;
+}
+.btn_support{
+    background-color: rgba(11, 104, 245, 0.584);
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.btn_support:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .support_main form input{
+        width: 200px;
+        padding: 20px;
+    }
+    .support_main{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,38 @@
+.slides {
+    margin: 0 auto;
+    max-width: 1000px; /* Adjust as needed */
+    padding-left: 10px;
+
+  }
+  .image_display_sideshow{
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .left_div{
+    display: flex;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Add animation for image transitions */
+  }
+  
+  
+  /* Media queries for responsive design */
+  
+  /* For smaller devices like tablets */
+  @media screen and (max-width: 768px) {
+    .slides {
+      max-width: 600px; /* Adjust for smaller screens */
+    }
+  }
+  
+  /* For even smaller devices like smartphones */
+  @media screen and (max-width: 480px) {
+    .slides {
+      max-width: 400px; /* Adjust for smaller screens */
+    }
+  }
+  
+  

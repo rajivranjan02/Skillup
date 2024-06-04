@@ -1,0 +1,34 @@
+.Chat_search input{
+    width: 19vw;
+    padding: 3px;
+    margin: 4px;
+    height: 26px;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 5vw;
+
+}
+.Users_chat{
+    display: flex;
+}
+.user_dp{
+    background-color: aliceblue;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    padding: 3px;
+    margin: 5px;
+
+}
+.user_name{
+    text-align: center;
+    padding: 17px;
+    margin: 10px;
+}
+
+.Chat_list{
+    padding-top: 9vw;
+    height: calc(100%-160px);
+    overflow-y: auto;
+    width: 20vw;
+}

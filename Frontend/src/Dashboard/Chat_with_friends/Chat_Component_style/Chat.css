@@ -1,0 +1,32 @@
+.chat_area{
+    
+    width: 50vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #ffff;
+    overflow: hidden;
+}
+.Chat_header{
+    font-weight: bold;
+    padding: 5px;
+}
+.message_user{
+    overflow-y: scroll;
+}
+.Chat_nav2{
+  height: 50px;
+  width: 762px;
+  padding: 4px;
+  background-color: rgba(20, 212, 123, 0.756);
+  position: fixed;
+  border-top-right-radius: 20px;
+  z-index: 1000;
+
+}
+.scroll_bar{
+    overflow-y: auto;
+    margin-top: 50px; 
+    padding-bottom: 50px;
+    overflow-y: auto;
+    height: calc(91vh - 150px);
+}
